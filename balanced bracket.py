@@ -4,6 +4,7 @@ def check_balanced_bracket():
     for character in bracket:
         if character == "(" or character == "[":
             stack.append(character)
+            continue
         # Check if the stack is empty
         if len(stack) == 0:
             return False
